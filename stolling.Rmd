@@ -3,7 +3,9 @@ title: "Veel gestelde vragen over hemostase"
 author: "Ruben Van Paemel"
 date: "2024-12-11"
 output: 
-  rmdformats::robobook
+  rmdformats::robobook:
+    fig_width: 5
+    lightbox: true
    #theme: cosmo
    #toc: true
    #toc_float: true
@@ -33,19 +35,21 @@ Een verlengde closure time (CT) kan wijzen op verschillende trombopathieën (Von
 # Secundaire hemostase
 <!-- Dropdown menu and image viewer -->
 <div>
-  <label for="image-selector">Kies een probleem:</label>
+  <label for="image-selector">Wat is het mechanisme van:</label>
   <select id="image-selector" onchange="updateImage();">
-    <option value="./images/stolling.drawio.png">Overzicht</option>
-    <option value="./images/vitK.drawio.png">Vitamine K afhankelijke stolfactoren</option>
-    <!-- <option value="./images/PT.drawio.png">PT</option>-->
-    <!-- <option value="./images/aPTT.drawio.png">aPTT</option>-->
+    <option value="./images/stolling.drawio.svg">maak een selectie</option>
+    <option value="./images/vitK.drawio.svg">Vitamine K afhankelijke stolfactoren</option>
+    <option value="./images/PT.drawio.svg">PT</option>
+    <option value="./images/aPTT.drawio.svg">aPTT</option>
+    <option value="./images/LMWH.drawio.svg">aPTT en LMW heparine</option>
+    <option value="./images/UFH.drawio.svg">aPTT en ongefract. heparine</option>
   </select>
 </div>
 
 <!-- Where the default image or selected image will be displayed -->
 <div>
   <!-- Default image initially shown -->
-  <img id="image-viewer" src="./images/stolling.drawio.png" alt="Default Image" style="max-width: 100%; height: auto; margin-top: 10px;">
+  <img id="image-viewer" src="./images/stolling.drawio.svg" alt="Default Image" style="max-width: 100%; height: auto; margin-top: 10px;">
 </div>
 
 <script>
@@ -73,7 +77,7 @@ Vitamine K is een vetoplosbaar vitamine en alle oorzaken van vetmalabsorptie kan
 ### Effect op PT en aPTT
 Bij vitamine K deficientie zijn zowel PT als aPTT verstoord (zie figuur). Bij milde deficientie kan enkel PT verstoord zijn door een dominant effect van factor VII, bij ernstige deficientie zijn PT en aPTT beide verstoord (zie figuur).
 
-## Ik heb een patient onder Xarelto (rivaroxaban) waarbij ik een procedure plan, wat moet ik doen? 
+## Ik heb een patient onder Xarelto waarbij ik een procedure plan, wat moet ik doen? 
 
 Xarelto en andere directe orale anticoagulantia werken door te binden aan de actieve site van factor Xa, waardoor Xa geïnhibeerd wordt.
 
