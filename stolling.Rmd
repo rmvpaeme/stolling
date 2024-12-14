@@ -43,13 +43,14 @@ Een verlengde closure time (CT) kan wijzen op verschillende trombopathieën (Von
     <option value="./images/aPTT.drawio.svg">aPTT</option>
     <option value="./images/LMWH.drawio.svg">aPTT en LMW heparine</option>
     <option value="./images/UFH.drawio.svg">aPTT en ongefract. heparine</option>
+    <option value="./images/DOAC.drawio.svg">DOACs</option>
   </select>
 </div>
 
 <!-- Where the default image or selected image will be displayed -->
 <div>
   <!-- Default image initially shown -->
-  <img id="image-viewer" src="./images/stolling.drawio.svg" alt="Default Image" style="max-width: 100%; height: auto; margin-top: 10px;">
+  <img id="image-viewer" src="./images/stolling.drawio.svg" alt="Default Image" style="max-width: 80%; height: auto; margin-top: 0px;">
 </div>
 
 <script>
