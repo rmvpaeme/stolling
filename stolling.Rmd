@@ -34,8 +34,8 @@ Een verlengde closure time (CT) kan wijzen op verschillende trombopathieën (Von
 
 # Secundaire hemostase
 
-https://pmc.ncbi.nlm.nih.gov/articles/PMC4087534/#:~:text=In%20acute%20liver%20failure%2C%20plasma,with%20vWf%20is%20usually%20elevated. todo 
-https://pmc.ncbi.nlm.nih.gov/articles/PMC6710154/ todo
+<!-- Dhttps://pmc.ncbi.nlm.nih.gov/articles/PMC4087534/#:~:text=In%20acute%20liver%20failure%2C%20plasma,with%20vWf%20is%20usually%20elevated. todo--> 
+<!-- Dhttps://pmc.ncbi.nlm.nih.gov/articles/PMC6710154/ todo-->
 
 <!-- Dropdown menu and image viewer -->
 <div>
@@ -45,10 +45,11 @@ https://pmc.ncbi.nlm.nih.gov/articles/PMC6710154/ todo
     <option value="./images/PT.drawio.svg">PT</option>
     <option value="./images/aPTT.drawio.svg">aPTT</option>
     <option value="./images/vitK.drawio.svg">Vitamine K afhankelijke stolfactoren</option>
-    <option value="./images/LMWH.drawio.svg">aPTT en LMW heparine</option>
-    <option value="./images/UFH.drawio.svg">aPTT en ongefract. heparine</option>
-    <option value="./images/DOAC.drawio.svg">DOACs (Pradaxa, Xarelto, Eliquis)</option>
-    <option value="./images/fibrinolysis.drawio.svg">fibrinolyse</option>
+    <option value="./images/LMWH.drawio.svg">LMW heparine</option>
+    <option value="./images/UFH.drawio.svg">Ongefractioneerde heparine</option>
+    <option value="./images/doac.drawio.svg">DOACs (Pradaxa, Xarelto, Eliquis)</option>
+    <option value="./images/fibrinolysis.drawio.svg">Fibrinolyse</option>
+    <option value="./images/tranexamic.drawio.svg">Tranexaminezuur (Exacyl) </option>
     <option value="./images/APC.drawio.svg">APC/F V Leiden</option>
   </select>
 </div>
@@ -73,7 +74,7 @@ function updateImage() {
 <!-- <div> -->
 <!--   <label for="image-selector">Wat is het mechanisme van:</label> -->
 <!--   <select id="image-selector" onchange="updateContent();"> -->
-<!--     <!-- Default Option (now an HTML file) --> -->
+<!--     <!-- Default Option (now an HTML file) --> 
 <!--     <option value="default" data-type="html" data-src="./images/stolling.drawio.html">maak een selectie</option> -->
 <!--     <option value="PT" data-type="html" data-src="./images/PT.drawio.html">PT</option> -->
 <!--     <option value="aPTT" data-type="html" data-src="./images/aPTT.drawio.html">aPTT</option> -->
@@ -86,7 +87,7 @@ function updateImage() {
 <!-- </div> -->
 
 <!-- <div id="viewer"> -->
-<!--   <!-- Default Viewer Display: Initially show the default HTML content --> -->
+<!--   <!-- Default Viewer Display: Initially show the default HTML content --> 
 <!--   <iframe id="html-viewer"  -->
 <!--           src="./images/stolling.drawio.html"  -->
 <!--           style="width: 80%; min-height: 700px; margin-top: 0px; display: block; border: none; overflow: hidden;"> -->
