@@ -3,7 +3,7 @@ title: "Veel gestelde vragen over hemostase"
 author: "Ruben Van Paemel"
 date: "2024-12-11"
 output: 
-  rmdformats::robobook:
+  rmdformats::readthedown:
     fig_width: 5
     lightbox: true
    #theme: cosmo
@@ -131,6 +131,42 @@ function updateImage() {
 <!--   }); -->
 <!-- </script> -->
 
+
+## Welke stolfactoren moet ik bepalen bij een verlengde PT en/of aPTT?
+Denk eerst en vooral aan afnameproblemen (onvoldoende gevulde citraatbuis, heparine op dezelfde lijn, klonters in de citraatbuis).
+
+Doe daarna een bloedingsanamnese LINK TOE TE VOEGEN.
+
+
+
+### Verlengde aPTT
+Bepaal F. VIII, IX, XI, XII, von Willebrand en lupus anticoagulans.https://www.ncbi.nlm.nih.gov/books/NBK507772/
+
+#### Achtergrond
+Een verlengde aPTT kan gepaard gaan met wel of geen verhoogde bloedingsneiging.
+
+Bij een verhoogde bloedingsneiging kan er een probleem zijn met factoren  VIII (hemofilie A), IX (hemofilie B), XI en XII.
+
+Von Willebrandfactor zorgt voor (1) plaatjes binden aan endotheel en (2) F. VIII beschermen. Bij bepaalde vormen van von Willebrand met een verlaagd factor VIII kan het dus dat de aPTT verlengd is. 
+
+De aPTT kan ook verstoord zijn zonder verhoogde bloedingsneiging bij een gedaalde factor XII (dit is een onderdeel van de aPTT test maar factor XII speelt geen rol bij de in vivo stolling) of bij aanwezigheid van een lupus anticoagulans (dit interfereert met de aPTT test waardoor die vals verlengd is).
+
+### Verlengde PT
+Bepaal F. II, V, VII, VIII, X en lupus anticoagulans.https://www.ncbi.nlm.nih.gov/books/NBK544269/
+
+#### Achtergrond
+De PT is verstoord bij alles wat een invloed heeft op factor VII (inhibitoren of deficientie). De onderliggende oorzaak kan medicamenteus (warfarine), vitamine K tekort, DIC of leverstoornissen zijn. https://www.thebloodproject.com/isolated-elevation-in-prothrombin-time-pt/
+
+Vitamine K, DIC en leverstoornissen beinvloeden echter ook andere stolfactoren van de common en intrinsic pathway. Soms gebeurt het toch dat de aPTT normaal is en de PT gestoord is.
+
+- Bij leverstoornissen en DIC: F. VIII stijgt (dit is een acute fase eiwit) en kan compenseren voor de andere gedaalde stolfactoren
+- Bij vitamine K deficientie: de halfwaardetijd van F. VII is het kortst en kan dus de eerste afwijkende factor zijn.
+
+### Verlengde PT en aPTT
+Bepaal F. II, V, VII, VIII, IX, X, XI, XII, lupus anticoagulans.
+
+
+
 ## Welke stolfactoren moet ik bepalen om vitamine K deficientie op te sporen?
 Vitamine K staat in voor de hepatische synthese van factors VII, IX, X, en II (prothrombin). Daarnaast is vitamine K ook noodzakelijk voor de functie van proteine C en proteine S. [Bron](https://www.uptodate.com/contents/overview-of-vitamin-k).
 
@@ -144,7 +180,16 @@ Vitamine K is een vetoplosbaar vitamine en alle oorzaken van vetmalabsorptie kan
 - Leverfalen: bij ernstig leverfalen kan bepalen van factor V en VII helpen om een onderscheid te maken tussen vitamine K deficientie en gestoorde stolling door leveraantasting. Factor V is bewaard bij vitamine K malabsorptie en factor VII is gedaald; het omgekeerde is van toepassing voor leverfalen.
 
 ### Effect op PT en aPTT
-Bij vitamine K deficientie zijn zowel PT als aPTT verstoord (zie figuur). Bij milde deficientie kan enkel PT verstoord zijn door een dominant effect van factor VII, bij ernstige deficientie zijn PT en aPTT beide verstoord (zie figuur).
+Bij vitamine K deficientie zijn zowel PT als aPTT verstoord (zie figuur). Bij milde deficientie kan enkel PT verstoord zijn door een dominant effect van factor VII (dit heeft de kortste halfwaardetijd), bij ernstige deficientie zijn PT en aPTT beide verstoord (zie figuur).
+
+
+
+
+## Ik heb een patient met een trombose, welke stolfactoren moet ik bepalen?
+Wacht eerst tot na de acute fase, bij infectie/inflammatie kunnen stolfactoren vals verhoogd of verlaagd zijn door verbruik of door de acute fase.
+
+Bepaal daarna proteine C, proteine S, antitrombine, F. VIII, APC (activated proteine C) resistentie, lupus anticoagulans en anticardiolipine###.
+
 
 ## Ik heb een patient onder Xarelto waarbij ik een procedure plan, wat moet ik doen? 
 
