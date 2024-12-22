@@ -5,49 +5,67 @@ date: "2024-12-11"
 output: 
   rmdformats::readthedown:
     fig_width: 5
-    lightbox: true
+    self_contained: no
+  #  lightbox: true
    # use_bookdown: true
     #theme: cosmo
   #html_document:
   #  toc: true
+    
   #  toc_float:
   #    collapsed: true
   #    smooth_scroll: false
-   
+editor_options: 
+  markdown: 
+    wrap: 72
+bibliography: Library.bib
+csl: vancouver.csl
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, dev = 'svglite', fig.ext = 'svg')
 library(tidyverse)
 library(DT)
 library(rmdformats)
 ```
 
 # Visueel overzicht
+
 <!-- Dropdown menu and image viewer -->
+
 <div>
-  <label for="image-selector">Wat is het mechanisme van:</label>
-  <select id="image-selector" onchange="updateImage();">
-    <option value="./images/stolling.drawio.svg">maak een selectie</option>
-    <option value="./images/PT.drawio.svg">PT</option>
-    <option value="./images/aPTT.drawio.svg">aPTT</option>
-    <option value="./images/vitK.drawio.svg">Vitamine K afhankelijke stolfactoren</option>
-    <option value="./images/LMWH.drawio.svg">LMW heparine</option>
-    <option value="./images/UFH.drawio.svg">Ongefractioneerde heparine</option>
-    <option value="./images/doac.drawio.svg">DOACs (Xarelto/rivaroxaban, Eliquis/apixaban)</option>
-    <option value="./images/dabigatran.drawio.svg">DOACs (Dabigatran/Pradaxa)</option>
-    <option value="./images/fibrinolysis.drawio.svg">Fibrinolyse</option>
-    <option value="./images/tranexamic.drawio.svg">Tranexaminezuur (Exacyl) </option>
-    <option value="./images/APC.drawio.svg">APC/F V Leiden</option>
-  </select>
+
+<label for="image-selector">Wat is het mechanisme van:</label>
+<select id="image-selector" onchange="updateImage();">
+<option value="./images/stolling.drawio.svg">maak een selectie</option>
+<option value="./images/PT.drawio.svg">PT</option>
+<option value="./images/aPTT.drawio.svg">aPTT</option>
+<option value="./images/vitK.drawio.svg">Vitamine K afhankelijke
+stolfactoren</option> <option value="./images/LMWH.drawio.svg">LMW
+heparine</option>
+<option value="./images/UFH.drawio.svg">Ongefractioneerde
+heparine</option> <option value="./images/doac.drawio.svg">DOACs
+(Xarelto/rivaroxaban, Eliquis/apixaban)</option>
+<option value="./images/dabigatran.drawio.svg">DOACs
+(Dabigatran/Pradaxa)</option>
+<option value="./images/fibrinolysis.drawio.svg">Fibrinolyse</option>
+<option value="./images/tranexamic.drawio.svg">Tranexaminezuur (Exacyl)
+</option> <option value="./images/APC.drawio.svg">APC/F V
+Leiden</option> </select>
+
 </div>
 
 <!-- Where the default image or selected image will be displayed -->
+
 <div>
-  <!-- Default image initially shown -->
-  <img id="image-viewer" src="./images/stolling.drawio.svg" alt="Default Image" style="max-width: 80%; height: auto; margin-top: 10px;">
+
+<!-- Default image initially shown -->
+
+<img src="./images/stolling.drawio.svg" alt="Default Image" id="image-viewer" style="max-width: 80%; height: auto; margin-top: 10px;"/>
+
 </div>
 
+```{=html}
 <script>
 // JavaScript to update the displayed image based on dropdown selection
 function updateImage() {
@@ -57,180 +75,173 @@ function updateImage() {
   imageViewer.src = selectedImage;
 }
 </script>
+```
 
-# Primaire hemostase 
+# Primaire hemostase
 
 ## Hoe werkt en interpreteer ik een plaatjesfunctieanalyse (PFA-100)
 
-![De PFA-100® bootst plaatjesadhesie en -aggregatie na in stromend bloed. [bron]( https://www.ariez.nl/wp-content/uploads/2018/08/133-7.pdf)](./images/PFA100.png)
+![De PFA-100® bootst plaatjesadhesie en -aggregatie na in stromend
+bloed. @akkermanBetekenisVanPlatelet2006](./images/PFA100.png)
 
 ### Mechanisme
-De Platelet Function Analyzer-100 (PFA-100) wordt gebruikt om plaatjesfunctie te testen in volbloed. In het toestel wordt een cardridge geplaatst dat een membraan bevat en gecoat is met collageen en epinefrine of adenosine difosfaat. In dit membraan zit een kleine opening. Door bloed te laten stromen over dit membraan wordt de opening gedicht door plaatjesactivatie en -aggregatie. Uiteindelijk wordt er een stabiele klonter gevormd. De "closure time" is de tijd die nodig is om een volledige occlusie van de opening in het membraan te krijgen.
-[Bron](https://pubmed.ncbi.nlm.nih.gov/9576184/)
+
+De Platelet Function Analyzer-100 (PFA-100) wordt gebruikt om
+plaatjesfunctie te testen in volbloed. In het toestel wordt een
+cardridge geplaatst dat een membraan bevat en gecoat is met collageen en
+epinefrine of adenosine difosfaat. In dit membraan zit een kleine
+opening. Door bloed te laten stromen over dit membraan wordt de opening
+gedicht door plaatjesactivatie en -aggregatie. Uiteindelijk wordt er een
+stabiele klonter gevormd. De "closure time" is de tijd die nodig is om
+een volledige occlusie van de opening in het membraan te krijgen. @carcaoPlateletFunctionAnalyzer1998
 
 
 ### Interpretatie
-Een verlengde closure time (CT) kan wijzen op verschillende trombopathieën (Von Willebrand, ernstige thrombocytopathieën), maar is niet specifiek voor één bepaalde aandoening en bij een afwijkende test is verder onderzoek nodig. 
 
-## Hoe interpreteer ik von Willebrand testen? 
+Een verlengde closure time (CT) kan wijzen op verschillende
+trombopathieën (Von Willebrand, ernstige thrombocytopathieën), maar is
+niet specifiek voor één bepaalde aandoening en bij een afwijkende test
+is verder onderzoek nodig.
+
+## Hoe interpreteer ik von Willebrand testen?
 
 # Secundaire hemostase
 
-<!-- Dhttps://pmc.ncbi.nlm.nih.gov/articles/PMC4087534/#:~:text=In%20acute%20liver%20failure%2C%20plasma,with%20vWf%20is%20usually%20elevated. todo--> 
+<!-- Dhttps://pmc.ncbi.nlm.nih.gov/articles/PMC4087534/#:~:text=In%20acute%20liver%20failure%2C%20plasma,with%20vWf%20is%20usually%20elevated. todo-->
+
 <!-- Dhttps://pmc.ncbi.nlm.nih.gov/articles/PMC6710154/ todo-->
 
-
-
-<!-- <div> -->
-<!--   <label for="image-selector">Wat is het mechanisme van:</label> -->
-<!--   <select id="image-selector" onchange="updateContent();"> -->
-<!--     <!-- Default Option (now an HTML file) --> 
-<!--     <option value="default" data-type="html" data-src="./images/stolling.drawio.html">maak een selectie</option> -->
-<!--     <option value="PT" data-type="html" data-src="./images/PT.drawio.html">PT</option> -->
-<!--     <option value="aPTT" data-type="html" data-src="./images/aPTT.drawio.html">aPTT</option> -->
-<!--     <option value="vitK" data-type="html" data-src="./images/vitK.drawio.html">Vitamine K afhankelijke stolfactoren</option> -->
-<!--     <option value="PTCC" data-type="html" data-src="./images/PTCC.drawio.html">Inhoud protrombinecomplexconcentraat</option> -->
-<!--     <option value="LMWH" data-type="html" data-src="./images/LMWH.drawio.html">aPTT en LMW heparine</option> -->
-<!--     <option value="UFH" data-type="html" data-src="./images/UFH.drawio.html">aPTT en ongefract. heparine</option> -->
-<!--     <option value="DOAC" data-type="html" data-src="./images/DOAC.drawio.html">DOACs (Xarelto, Eliquis, Pradaxa)</option> -->
-<!--   </select> -->
-<!-- </div> -->
-
-<!-- <div id="viewer"> -->
-<!--   <!-- Default Viewer Display: Initially show the default HTML content --> 
-<!--   <iframe id="html-viewer"  -->
-<!--           src="./images/stolling.drawio.html"  -->
-<!--           style="width: 80%; min-height: 700px; margin-top: 0px; display: block; border: none; overflow: hidden;"> -->
-<!--   </iframe> -->
-<!-- </div> -->
-
-<!-- <script> -->
-<!--   // JavaScript to handle dropdown options -->
-<!--   function updateContent() { -->
-<!--     var imageSelector = document.getElementById("image-selector"); -->
-<!--     var selectedOption = imageSelector.options[imageSelector.selectedIndex]; -->
-<!--     var dataType = selectedOption.getAttribute("data-type"); -->
-<!--     var src = selectedOption.getAttribute("data-src"); -->
-
-<!--     var htmlViewer = document.getElementById("html-viewer"); -->
-
-<!--     if (dataType === "html") { -->
-<!--       // Show HTML iframe -->
-<!--       htmlViewer.style.display = "block"; -->
-<!--       htmlViewer.src = src; -->
-
-<!--       // Adjust the iframe's height manually if required -->
-<!--       adjustIframeHeightForPage(src); -->
-<!--     } -->
-<!--   } -->
-
-<!--   function adjustIframeHeightForPage(src) { -->
-<!--     var htmlViewer = document.getElementById("html-viewer"); -->
-
-<!--     // Adjust height based on known pages -->
-<!--     if (src.includes("UFH.html")) { -->
-<!--       htmlViewer.style.height = "800px"; // Adjust as needed for UFH.html -->
-<!--     } else { -->
-<!--       htmlViewer.style.height = "600px"; // Default height -->
-<!--     } -->
-<!--   } -->
-
-<!--   // Automatically load the default HTML content on page load -->
-<!--   document.addEventListener("DOMContentLoaded", function () { -->
-<!--     updateContent(); -->
-<!--   }); -->
-<!-- </script> -->
-
-
 ## Welke stolfactoren moet ik bepalen bij een verlengde PT en/of aPTT?
-Denk eerst en vooral aan afnameproblemen (onvoldoende gevulde citraatbuis, heparine op dezelfde lijn, klonters in de citraatbuis).
+
+Denk eerst en vooral aan afnameproblemen (onvoldoende gevulde
+citraatbuis, heparine op dezelfde lijn, klonters in de citraatbuis).
 
 Doe daarna een bloedingsanamnese LINK TOE TE VOEGEN.
 
-
-
 ### Verlengde aPTT
-Bepaal F. VIII, IX, XI, XII, von Willebrand en lupus anticoagulans.https://www.ncbi.nlm.nih.gov/books/NBK507772/
+
+Bepaal F. VIII, IX, XI, XII, von Willebrand en lupus anticoagulans. @rountreePartialThromboplastinTime2024
 
 #### Achtergrond
-Een verlengde aPTT kan gepaard gaan met wel of geen verhoogde bloedingsneiging.
 
-Bij een verhoogde bloedingsneiging kan er een probleem zijn met factoren  VIII (hemofilie A), IX (hemofilie B), XI en XII.
+Een verlengde aPTT kan gepaard gaan met wel of geen verhoogde
+bloedingsneiging.
 
-Von Willebrandfactor zorgt voor (1) plaatjes binden aan endotheel en (2) F. VIII beschermen. Bij bepaalde vormen van von Willebrand met een verlaagd factor VIII kan het dus dat de aPTT verlengd is. 
+Bij een verhoogde bloedingsneiging kan er een probleem zijn met factoren
+VIII (hemofilie A), IX (hemofilie B), XI en XII.
 
-De aPTT kan ook verstoord zijn zonder verhoogde bloedingsneiging bij een gedaalde factor XII (dit is een onderdeel van de aPTT test maar factor XII speelt geen rol bij de in vivo stolling) of bij aanwezigheid van een lupus anticoagulans (dit interfereert met de aPTT test waardoor die vals verlengd is).
+Von Willebrandfactor zorgt voor (1) plaatjes binden aan endotheel en (2)
+F. VIII beschermen. Bij bepaalde vormen van von Willebrand met een
+verlaagd factor VIII kan het dus dat de aPTT verlengd is.
+
+De aPTT kan ook verstoord zijn zonder verhoogde bloedingsneiging bij een
+gedaalde factor XII (dit is een onderdeel van de aPTT test maar factor
+XII speelt geen rol bij de in vivo stolling) of bij aanwezigheid van een
+lupus anticoagulans (dit interfereert met de aPTT test waardoor die vals
+verlengd is).
 
 ### Verlengde PT
-Bepaal F. II, V, VII, VIII, X en lupus anticoagulans.https://www.ncbi.nlm.nih.gov/books/NBK544269/
+
+Bepaal F. II, V, VII, VIII, X en lupus anticoagulans. @rountreePartialThromboplastinTime2024
 
 #### Achtergrond
-De PT is verstoord bij alles wat een invloed heeft op factor VII (inhibitoren of deficientie). De onderliggende oorzaak kan medicamenteus (warfarine), vitamine K tekort, DIC of leverstoornissen zijn. https://www.thebloodproject.com/isolated-elevation-in-prothrombin-time-pt/
 
-Vitamine K, DIC en leverstoornissen beinvloeden echter ook andere stolfactoren van de common en intrinsic pathway. Soms gebeurt het toch dat de aPTT normaal is en de PT gestoord is.
+De PT is verstoord bij alles wat een invloed heeft op factor VII
+(inhibitoren of deficientie). De onderliggende oorzaak kan medicamenteus
+(warfarine), vitamine K tekort, DIC of leverstoornissen zijn. @aird23
 
-- Bij leverstoornissen en DIC: F. VIII stijgt (dit is een acute fase eiwit) en kan compenseren voor de andere gedaalde stolfactoren
-- Bij vitamine K deficientie: de halfwaardetijd van F. VII is het kortst en kan dus de eerste afwijkende factor zijn.
+Vitamine K, DIC en leverstoornissen beinvloeden echter ook andere
+stolfactoren van de common en intrinsic pathway. Soms gebeurt het toch
+dat de aPTT normaal is en de PT gestoord is.
+
+-   Bij leverstoornissen en DIC: F. VIII stijgt (dit is een acute fase
+    eiwit) en kan compenseren voor de andere gedaalde stolfactoren
+-   Bij vitamine K deficientie: de halfwaardetijd van F. VII is het
+    kortst en kan dus de eerste afwijkende factor zijn.
 
 ### Verlengde PT en aPTT
+
 Bepaal F. II, V, VII, VIII, IX, X, XI, XII, lupus anticoagulans.
 
-
-
 ## Welke stolfactoren moet ik bepalen om vitamine K deficientie op te sporen?
-Vitamine K staat in voor de hepatische synthese van factors VII, IX, X, en II (prothrombin). Daarnaast is vitamine K ook noodzakelijk voor de functie van proteine C en proteine S. [Bron](https://www.uptodate.com/contents/overview-of-vitamin-k).
+
+Vitamine K staat in voor de hepatische synthese van factors VII, IX, X,
+en II (prothrombin). Daarnaast is vitamine K ook noodzakelijk voor de
+functie van proteine C en proteine S. @Overview
 
 ### Oorzaken
-Vitamine K is een vetoplosbaar vitamine en alle oorzaken van vetmalabsorptie kan leiden tot vitamine K tekort.
 
-- Mucoviscidose
-- Galwegatresie
-- Cholestase 
-- Intestinale aandoeningen (coeliakie, IBD, short bowel)
-- Leverfalen: bij ernstig leverfalen kan bepalen van factor V en VII helpen om een onderscheid te maken tussen vitamine K deficientie en gestoorde stolling door leveraantasting. Factor V is bewaard bij vitamine K malabsorptie en factor VII is gedaald; het omgekeerde is van toepassing voor leverfalen.
+Vitamine K is een vetoplosbaar vitamine en alle oorzaken van
+vetmalabsorptie kan leiden tot vitamine K tekort.
+
+-   Mucoviscidose
+-   Galwegatresie
+-   Cholestase
+-   Intestinale aandoeningen (coeliakie, IBD, short bowel)
+-   Leverfalen: bij ernstig leverfalen kan bepalen van factor V en VII
+    helpen om een onderscheid te maken tussen vitamine K deficientie en
+    gestoorde stolling door leveraantasting. Factor V is bewaard bij
+    vitamine K malabsorptie en factor VII is gedaald; het omgekeerde is
+    van toepassing voor leverfalen.
 
 ### Effect op PT en aPTT
-Bij vitamine K deficientie zijn zowel PT als aPTT verstoord (zie figuur). Bij milde deficientie kan enkel PT verstoord zijn door een dominant effect van factor VII (dit heeft de kortste halfwaardetijd), bij ernstige deficientie zijn PT en aPTT beide verstoord (zie figuur).
 
+Bij vitamine K deficientie zijn zowel PT als aPTT verstoord (zie
+figuur). Bij milde deficientie kan enkel PT verstoord zijn door een
+dominant effect van factor VII (dit heeft de kortste halfwaardetijd),
+bij ernstige deficientie zijn PT en aPTT beide verstoord (zie figuur).
 
-
-
-# Anticoagulantia 
+# Anticoagulantia
 
 ## Ik heb een patient met een trombose, welke stolfactoren moet ik bepalen?
-Wacht eerst tot na de acute fase, bij infectie/inflammatie kunnen stolfactoren vals verhoogd of verlaagd zijn door verbruik of door de acute fase.
+
+Wacht eerst tot na de acute fase, bij infectie/inflammatie kunnen
+stolfactoren vals verhoogd of verlaagd zijn door verbruik of door de
+acute fase.
 
 Bepaal daarna:
 
-- Proteine C (deficientie)
-- Proteine S (deficientie)
-- Antitrombine (deficientie)
-- F. VIII (overactiviteit)
-- APC (activated proteine C) resistentie
-- F. V Leiden mutatie indien APC resistentie aanwezig
-- Protrombine G20210A mutatie 
-- Lupus anticoagulans
-- Anticardiolipine
-- beta-2-glycoproteine
+-   Proteine C (deficientie)
+-   Proteine S (deficientie)
+-   Antitrombine (deficientie)
+-   F. VIII (overactiviteit)
+-   APC (activated proteine C) resistentie
+-   F. V Leiden mutatie indien APC resistentie aanwezig
+-   Protrombine G20210A mutatie
+-   Lupus anticoagulans
+-   Anticardiolipine
+-   beta-2-glycoproteine
 
-Over de rol van homocysteine is er discussie en routine testing is niet aangewezen. Bron https://www.sciencedirect.com/science/article/pii/S001086501300009X. 
+Over de rol van homocysteine is er discussie en routine testing is niet
+aangewezen. @Homocysteine
 
-## Wat zijn de indicaties voor DOACs bij kinderen? 
+## Wat zijn de indicaties voor DOACs bij kinderen?
 
-Dabigatran/Pradaxa: behandeling en preventie van recidief van veneuze trombo-embolie (VTE). Bron: BCFI.
+Dabigatran/Pradaxa: behandeling en preventie van recidief van veneuze
+trombo-embolie (VTE). Bron: BCFI.
 
-Rivaroxaban/Xarelto: behandeling en preventie van recidief van veneuze trombo-embolie (VTE). Bron: BCFI.
+Rivaroxaban/Xarelto: behandeling en preventie van recidief van veneuze
+trombo-embolie (VTE). Bron: BCFI.
 
-## Hoelang en welke antico moet ik geven bij een veneuze trombose? 
-![VTE. Bron https://www.uptodate.com/contents/venous-thrombosis-and-thromboembolism-vte-in-children-treatment-prevention-and-outcome](images/VTE.drawio.svg)
+## Hoelang en welke antico moet ik geven bij een veneuze trombose?
 
-## Ik heb een patient onder Xarelto/rivaroxaban waarbij ik een procedure plan, wat moet ik doen? 
+![Duur van anticoagulantia bij veneuze trombose bij kinderen. @Venous](images/VTE.drawio.svg)
 
-Xarelto en andere directe orale anticoagulantia werken door te binden aan de actieve site van factor Xa, waardoor Xa geïnhibeerd wordt.
+## Ik heb een patient onder Xarelto/rivaroxaban waarbij ik een procedure plan, wat moet ik doen?
 
-Xarelto heeft een halfwaardetijd van gemiddeld 4.2 uur bij adolescenten, 3 uur bij kinderen tussen 2 tot 12 jaar, 1.9 uur bij kinderen 0.5 tot <2 jaar, en 1.6 uur bij kinderen <0.5 jaar (met renale klaring dus bij nierinsufficientie neemt de halfwaardetijd toe). [Bron](https://www.ncbi.nlm.nih.gov/books/NBK557590/) en [2](https://www.xareltohcp.com/pediatric-indications/pediatric-vte/).
+Xarelto en andere directe orale anticoagulantia werken door te binden
+aan de actieve site van factor Xa, waardoor Xa geïnhibeerd wordt.
 
-Bij patienten met een normale nierfunctie dient Xarelto gestopt te worden 24u op voorhand bij een procedure met laag bloedingsrisico en 48u bij een procedure met een hoog bloedingsrisico. [Bron 1]( https://www.janssenscience.com/products/xarelto/medical-content/use-of-xarelto-in-perioperative-use#references-content), [2](https://cpthn.ca/wp-content/uploads/2023/01/CPTHN-Rivaroxaban-Guidance-Document_Final-Sep-2021-002.pdf)
+Xarelto heeft een halfwaardetijd van gemiddeld 4.2 uur bij adolescenten,
+3 uur bij kinderen tussen 2 tot 12 jaar, 1.9 uur bij kinderen 0.5 tot
+\<2 jaar, en 1.6 uur bij kinderen \<0.5 jaar (met renale klaring dus bij
+nierinsufficientie neemt de halfwaardetijd toe). @polaniagutierrez_rocuts24; @XARELTO
+
+
+Bij patienten met een normale nierfunctie dient Xarelto gestopt te
+worden 24u op voorhand bij een procedure met laag bloedingsrisico en 48u
+bij een procedure met een hoog bloedingsrisico. @Use en
+[2](https://cpthn.ca/wp-content/uploads/2023/01/CPTHN-Rivaroxaban-Guidance-Document_Final-Sep-2021-002.pdf)
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE, error=FALSE}
 procedures_risk <- tibble(
