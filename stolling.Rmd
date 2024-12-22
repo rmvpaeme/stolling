@@ -6,9 +6,14 @@ output:
   rmdformats::readthedown:
     fig_width: 5
     lightbox: true
-   #theme: cosmo
-   #toc: true
-   #toc_float: true
+   # use_bookdown: true
+    #theme: cosmo
+  #html_document:
+  #  toc: true
+  #  toc_float:
+  #    collapsed: true
+  #    smooth_scroll: false
+   
 ---
 
 ```{r setup, include=FALSE}
@@ -18,25 +23,7 @@ library(DT)
 library(rmdformats)
 ```
 
-# Primaire hemostase 
-
-## Hoe werkt en interpreteer ik een plaatjesfunctieanalyse (PFA-100)
-
-![De PFA-100® bootst plaatjesadhesie en -aggregatie na in stromend bloed. [bron]( https://www.ariez.nl/wp-content/uploads/2018/08/133-7.pdf)](./images/PFA100.png)
-
-### Mechanisme
-De Platelet Function Analyzer-100 (PFA-100) wordt gebruikt om plaatjesfunctie te testen in volbloed. In het toestel wordt een cardridge geplaatst dat een membraan bevat en gecoat is met collageen en epinefrine of adenosine difosfaat. In dit membraan zit een kleine opening. Door bloed te laten stromen over dit membraan wordt de opening gedicht door plaatjesactivatie en -aggregatie. Uiteindelijk wordt er een stabiele klonter gevormd. De "closure time" is de tijd die nodig is om een volledige occlusie van de opening in het membraan te krijgen.
-[Bron](https://pubmed.ncbi.nlm.nih.gov/9576184/)
-
-
-### Interpretatie
-Een verlengde closure time (CT) kan wijzen op verschillende trombopathieën (Von Willebrand, ernstige thrombocytopathieën), maar is niet specifiek voor één bepaalde aandoening en bij een afwijkende test is verder onderzoek nodig. 
-
-# Secundaire hemostase
-
-<!-- Dhttps://pmc.ncbi.nlm.nih.gov/articles/PMC4087534/#:~:text=In%20acute%20liver%20failure%2C%20plasma,with%20vWf%20is%20usually%20elevated. todo--> 
-<!-- Dhttps://pmc.ncbi.nlm.nih.gov/articles/PMC6710154/ todo-->
-
+# Visueel overzicht
 <!-- Dropdown menu and image viewer -->
 <div>
   <label for="image-selector">Wat is het mechanisme van:</label>
@@ -47,7 +34,8 @@ Een verlengde closure time (CT) kan wijzen op verschillende trombopathieën (Von
     <option value="./images/vitK.drawio.svg">Vitamine K afhankelijke stolfactoren</option>
     <option value="./images/LMWH.drawio.svg">LMW heparine</option>
     <option value="./images/UFH.drawio.svg">Ongefractioneerde heparine</option>
-    <option value="./images/doac.drawio.svg">DOACs (Pradaxa, Xarelto, Eliquis)</option>
+    <option value="./images/doac.drawio.svg">DOACs (Xarelto/rivaroxaban, Eliquis/apixaban)</option>
+    <option value="./images/dabigatran.drawio.svg">DOACs (Dabigatran/Pradaxa)</option>
     <option value="./images/fibrinolysis.drawio.svg">Fibrinolyse</option>
     <option value="./images/tranexamic.drawio.svg">Tranexaminezuur (Exacyl) </option>
     <option value="./images/APC.drawio.svg">APC/F V Leiden</option>
@@ -69,6 +57,28 @@ function updateImage() {
   imageViewer.src = selectedImage;
 }
 </script>
+
+# Primaire hemostase 
+
+## Hoe werkt en interpreteer ik een plaatjesfunctieanalyse (PFA-100)
+
+![De PFA-100® bootst plaatjesadhesie en -aggregatie na in stromend bloed. [bron]( https://www.ariez.nl/wp-content/uploads/2018/08/133-7.pdf)](./images/PFA100.png)
+
+### Mechanisme
+De Platelet Function Analyzer-100 (PFA-100) wordt gebruikt om plaatjesfunctie te testen in volbloed. In het toestel wordt een cardridge geplaatst dat een membraan bevat en gecoat is met collageen en epinefrine of adenosine difosfaat. In dit membraan zit een kleine opening. Door bloed te laten stromen over dit membraan wordt de opening gedicht door plaatjesactivatie en -aggregatie. Uiteindelijk wordt er een stabiele klonter gevormd. De "closure time" is de tijd die nodig is om een volledige occlusie van de opening in het membraan te krijgen.
+[Bron](https://pubmed.ncbi.nlm.nih.gov/9576184/)
+
+
+### Interpretatie
+Een verlengde closure time (CT) kan wijzen op verschillende trombopathieën (Von Willebrand, ernstige thrombocytopathieën), maar is niet specifiek voor één bepaalde aandoening en bij een afwijkende test is verder onderzoek nodig. 
+
+## Hoe interpreteer ik von Willebrand testen? 
+
+# Secundaire hemostase
+
+<!-- Dhttps://pmc.ncbi.nlm.nih.gov/articles/PMC4087534/#:~:text=In%20acute%20liver%20failure%2C%20plasma,with%20vWf%20is%20usually%20elevated. todo--> 
+<!-- Dhttps://pmc.ncbi.nlm.nih.gov/articles/PMC6710154/ todo-->
+
 
 
 <!-- <div> -->
@@ -185,13 +195,36 @@ Bij vitamine K deficientie zijn zowel PT als aPTT verstoord (zie figuur). Bij mi
 
 
 
+# Anticoagulantia 
+
 ## Ik heb een patient met een trombose, welke stolfactoren moet ik bepalen?
 Wacht eerst tot na de acute fase, bij infectie/inflammatie kunnen stolfactoren vals verhoogd of verlaagd zijn door verbruik of door de acute fase.
 
-Bepaal daarna proteine C, proteine S, antitrombine, F. VIII, APC (activated proteine C) resistentie, lupus anticoagulans en anticardiolipine###.
+Bepaal daarna:
 
+- Proteine C (deficientie)
+- Proteine S (deficientie)
+- Antitrombine (deficientie)
+- F. VIII (overactiviteit)
+- APC (activated proteine C) resistentie
+- F. V Leiden mutatie indien APC resistentie aanwezig
+- Protrombine G20210A mutatie 
+- Lupus anticoagulans
+- Anticardiolipine
+- beta-2-glycoproteine
 
-## Ik heb een patient onder Xarelto waarbij ik een procedure plan, wat moet ik doen? 
+Over de rol van homocysteine is er discussie en routine testing is niet aangewezen. Bron https://www.sciencedirect.com/science/article/pii/S001086501300009X. 
+
+## Wat zijn de indicaties voor DOACs bij kinderen? 
+
+Dabigatran/Pradaxa: behandeling en preventie van recidief van veneuze trombo-embolie (VTE). Bron: BCFI.
+
+Rivaroxaban/Xarelto: behandeling en preventie van recidief van veneuze trombo-embolie (VTE). Bron: BCFI.
+
+## Hoelang en welke antico moet ik geven bij een veneuze trombose? 
+![VTE. Bron https://www.uptodate.com/contents/venous-thrombosis-and-thromboembolism-vte-in-children-treatment-prevention-and-outcome](images/VTE.drawio.svg)
+
+## Ik heb een patient onder Xarelto/rivaroxaban waarbij ik een procedure plan, wat moet ik doen? 
 
 Xarelto en andere directe orale anticoagulantia werken door te binden aan de actieve site van factor Xa, waardoor Xa geïnhibeerd wordt.
 
