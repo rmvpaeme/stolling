@@ -44,10 +44,8 @@ library(rmdformats)
 stolfactoren</option> <option value="./images/LMWH.drawio.svg">LMW
 heparine</option>
 <option value="./images/UFH.drawio.svg">Ongefractioneerde
-heparine</option> <option value="./images/doac.drawio.svg">DOACs
-(Xarelto/rivaroxaban, Eliquis/apixaban)</option>
-<option value="./images/dabigatran.drawio.svg">DOACs
-(Dabigatran/Pradaxa)</option>
+heparine</option> <option value="./images/doac.drawio.svg">Xarelto/rivaroxaban, Eliquis/apixaban</option>
+<option value="./images/dabigatran.drawio.svg">Dabigatran/Pradaxa</option>
 <option value="./images/fibrinolysis.drawio.svg">Fibrinolyse</option>
 <option value="./images/tranexamic.drawio.svg">Tranexaminezuur (Exacyl)
 </option> <option value="./images/APC.drawio.svg">APC/F V
