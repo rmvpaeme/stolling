@@ -1,6 +1,6 @@
 ---
 title: "Anticoagulantia"
-#output: html_document
+output: html_document
 bibliography: Library.bib
 csl: vancouver.csl
 ---
