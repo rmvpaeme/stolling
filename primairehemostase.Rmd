@@ -30,3 +30,9 @@ niet specifiek voor één bepaalde aandoening en bij een afwijkende test
 is verder onderzoek nodig.
 
 ## Hoe interpreteer ik von Willebrand testen?
+
+
+## Referenties
+
+::: #refs
+:::

@@ -20,6 +20,7 @@ output:
 editor_options: 
   markdown: 
     wrap: 72
+    
 
 navbar:  
   title: "Veel gestelde vragen over hemostase"

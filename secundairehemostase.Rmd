@@ -10,18 +10,18 @@ csl: vancouver.csl
 
 <!-- Dhttps://pmc.ncbi.nlm.nih.gov/articles/PMC6710154/ todo-->
 
-## Welke stolfactoren moet ik bepalen bij een verlengde PT en/of aPTT?
+## Welke stolfactoren moet ik bepalen bij een verlengde PT en/of aPTT? {.tabset}
 
 Denk eerst en vooral aan afnameproblemen (onvoldoende gevulde
 citraatbuis, heparine op dezelfde lijn, klonters in de citraatbuis).
 
 Doe daarna een bloedingsanamnese LINK TOE TE VOEGEN.
 
-### Verlengde aPTT
+### Verlengde aPTT 
 
 Bepaal F. VIII, IX, XI, XII, von Willebrand en lupus anticoagulans. @rountreePartialThromboplastinTime2024
 
-#### Achtergrond
+#### Achtergrond  
 
 Een verlengde aPTT kan gepaard gaan met wel of geen verhoogde
 bloedingsneiging.
@@ -62,6 +62,10 @@ dat de aPTT normaal is en de PT gestoord is.
 
 Bepaal F. II, V, VII, VIII, IX, X, XI, XII, lupus anticoagulans.
 
+## 
+
+---
+
 ## Welke stolfactoren moet ik bepalen om vitamine K deficientie op te sporen?
 
 Vitamine K staat in voor de hepatische synthese van factors VII, IX, X,
@@ -89,3 +93,9 @@ Bij vitamine K deficientie zijn zowel PT als aPTT verstoord (zie
 figuur). Bij milde deficientie kan enkel PT verstoord zijn door een
 dominant effect van factor VII (dit heeft de kortste halfwaardetijd),
 bij ernstige deficientie zijn PT en aPTT beide verstoord (zie figuur).
+
+
+## Referenties
+
+::: #refs
+:::

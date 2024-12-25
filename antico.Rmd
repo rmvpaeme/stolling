@@ -35,6 +35,9 @@ Bepaal daarna:
 Over de rol van homocysteine is er discussie en routine testing is niet
 aangewezen. @Homocysteine
 
+
+---
+
 ## Wat zijn de indicaties voor DOACs bij kinderen?
 
 Dabigatran/Pradaxa: behandeling en preventie van recidief van veneuze
@@ -43,9 +46,15 @@ trombo-embolie (VTE). Bron: BCFI.
 Rivaroxaban/Xarelto: behandeling en preventie van recidief van veneuze
 trombo-embolie (VTE). Bron: BCFI.
 
+
+---
+
 ## Hoelang en welke antico moet ik geven bij een veneuze trombose?
 
 ![Duur van anticoagulantia bij veneuze trombose bij kinderen. @Venous](images/VTE.drawio.svg)
+
+
+---
 
 ## Ik heb een patient onder Xarelto/rivaroxaban waarbij ik een procedure plan, wat moet ik doen?
 
@@ -98,3 +107,11 @@ datatable(
   #style = "minimal"                     # Use the minimal style
 )
 ```
+
+
+
+
+## Referenties
+
+::: #refs
+:::
