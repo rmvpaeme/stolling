@@ -1,7 +1,7 @@
 title: "Veel gestelde vragen over hemostase"
 author: "Ruben Van Paemel"
 date: "2024-12-11"
-output_dir: "docs"  
+output_dir: "."  
 output: 
   #rmdformats::readthedown:
   #  fig_width: 5
