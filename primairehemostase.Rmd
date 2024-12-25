@@ -1,0 +1,32 @@
+---
+title: "Primaire hemostase"
+output: html_document
+bibliography: Library.bib
+csl: vancouver.csl
+---
+
+## Hoe werkt en interpreteer ik een plaatjesfunctieanalyse (PFA-100)
+
+![De PFA-100® bootst plaatjesadhesie en -aggregatie na in stromend
+bloed. @akkermanBetekenisVanPlatelet2006](./images/PFA100.png)
+
+### Mechanisme
+
+De Platelet Function Analyzer-100 (PFA-100) wordt gebruikt om
+plaatjesfunctie te testen in volbloed. In het toestel wordt een
+cardridge geplaatst dat een membraan bevat en gecoat is met collageen en
+epinefrine of adenosine difosfaat. In dit membraan zit een kleine
+opening. Door bloed te laten stromen over dit membraan wordt de opening
+gedicht door plaatjesactivatie en -aggregatie. Uiteindelijk wordt er een
+stabiele klonter gevormd. De "closure time" is de tijd die nodig is om
+een volledige occlusie van de opening in het membraan te krijgen. @carcaoPlateletFunctionAnalyzer1998
+
+
+### Interpretatie
+
+Een verlengde closure time (CT) kan wijzen op verschillende
+trombopathieën (Von Willebrand, ernstige thrombocytopathieën), maar is
+niet specifiek voor één bepaalde aandoening en bij een afwijkende test
+is verder onderzoek nodig.
+
+## Hoe interpreteer ik von Willebrand testen?

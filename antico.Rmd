@@ -1,0 +1,100 @@
+---
+title: "Anticoagulantia"
+#output: html_document
+bibliography: Library.bib
+csl: vancouver.csl
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, dev = 'svglite', fig.ext = 'svg')
+library(tidyverse)
+library(DT)
+library(rmdformats)
+```
+
+
+## Ik heb een patient met een trombose, welke stolfactoren moet ik bepalen?
+
+Wacht eerst tot na de acute fase, bij infectie/inflammatie kunnen
+stolfactoren vals verhoogd of verlaagd zijn door verbruik of door de
+acute fase.
+
+Bepaal daarna:
+
+-   Proteine C (deficientie)
+-   Proteine S (deficientie)
+-   Antitrombine (deficientie)
+-   F. VIII (overactiviteit)
+-   APC (activated proteine C) resistentie
+-   F. V Leiden mutatie indien APC resistentie aanwezig
+-   Protrombine G20210A mutatie
+-   Lupus anticoagulans
+-   Anticardiolipine
+-   beta-2-glycoproteine
+
+Over de rol van homocysteine is er discussie en routine testing is niet
+aangewezen. @Homocysteine
+
+## Wat zijn de indicaties voor DOACs bij kinderen?
+
+Dabigatran/Pradaxa: behandeling en preventie van recidief van veneuze
+trombo-embolie (VTE). Bron: BCFI.
+
+Rivaroxaban/Xarelto: behandeling en preventie van recidief van veneuze
+trombo-embolie (VTE). Bron: BCFI.
+
+## Hoelang en welke antico moet ik geven bij een veneuze trombose?
+
+![Duur van anticoagulantia bij veneuze trombose bij kinderen. @Venous](images/VTE.drawio.svg)
+
+## Ik heb een patient onder Xarelto/rivaroxaban waarbij ik een procedure plan, wat moet ik doen?
+
+Xarelto en andere directe orale anticoagulantia werken door te binden
+aan de actieve site van factor Xa, waardoor Xa geïnhibeerd wordt.
+
+Xarelto heeft een halfwaardetijd van gemiddeld 4.2 uur bij adolescenten,
+3 uur bij kinderen tussen 2 tot 12 jaar, 1.9 uur bij kinderen 0.5 tot
+\<2 jaar, en 1.6 uur bij kinderen \<0.5 jaar (met renale klaring dus bij
+nierinsufficientie neemt de halfwaardetijd toe). @polaniagutierrez_rocuts24; @XARELTO
+
+
+Bij patienten met een normale nierfunctie dient Xarelto gestopt te
+worden 24u op voorhand bij een procedure met laag bloedingsrisico en 48u
+bij een procedure met een hoog bloedingsrisico. @Use en
+[2](https://cpthn.ca/wp-content/uploads/2023/01/CPTHN-Rivaroxaban-Guidance-Document_Final-Sep-2021-002.pdf)
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, error=FALSE}
+procedures_risk <- tibble(
+  `MILD/MATIG RISICO` = c(
+    "Tandextracties",
+    "Dermatologische procedures (bv biopsie)",
+    "Endoscopie of colonoscopie (+/- biopsie)",
+    "Beenmergpunctie",
+    "Lumbaalpunctie",
+    "Andere abdominale surgery (e.g., laparoscopische cholecystectomie, herniaherstel)",
+    NA
+  ),
+  `HOOG RISICO` = c(
+    "Neurochirurgie",
+    "Neuraxiale anesthesie (spinaal or epiduraal)",
+    "Hartchirurgie",
+    "Majeure abdominale chirurgie",
+    "Thoraxchirurgie",
+    "Extensieve tumorectomie",
+    "Lever of nierbiopsie"
+  )
+)
+
+
+datatable(
+  procedures_risk,
+  rownames = FALSE,                     # Remove row names
+  options = list(
+    dom = 't',                          # Only show the table, no search or pagination
+    ordering = FALSE,                   # Disable column sorting
+    info = FALSE,                       # Hide table information
+    paging = FALSE                      # Disable pagination
+  ),
+  #style = "minimal"                     # Use the minimal style
+)
+```

@@ -1,0 +1,59 @@
+---
+title: "Stollingscascade"
+output:
+  html_document:
+    toc: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, dev = 'svglite', fig.ext = 'svg')
+library(tidyverse)
+library(DT)
+library(rmdformats)
+#rmarkdown::render_site()
+
+```
+
+<!-- Dropdown menu and image viewer -->
+
+<div>
+
+<label for="image-selector">Wat is het mechanisme van:</label>
+<select id="image-selector" onchange="updateImage();">
+<option value="./images/stolling.drawio.svg">maak een selectie</option>
+<option value="./images/PT.drawio.svg">PT</option>
+<option value="./images/aPTT.drawio.svg">aPTT</option>
+<option value="./images/vitK.drawio.svg">Vitamine K afhankelijke
+stolfactoren</option> <option value="./images/LMWH.drawio.svg">LMW
+heparine</option>
+<option value="./images/UFH.drawio.svg">Ongefractioneerde
+heparine</option> <option value="./images/doac.drawio.svg">Xarelto/rivaroxaban, Eliquis/apixaban</option>
+<option value="./images/dabigatran.drawio.svg">Dabigatran/Pradaxa</option>
+<option value="./images/fibrinolysis.drawio.svg">Fibrinolyse</option>
+<option value="./images/tranexamic.drawio.svg">Tranexaminezuur (Exacyl)
+</option> <option value="./images/APC.drawio.svg">APC/F V
+Leiden</option> </select>
+
+</div>
+
+<!-- Where the default image or selected image will be displayed -->
+
+<div>
+
+<!-- Default image initially shown -->
+
+<img src="./images/stolling.drawio.svg" alt="Default Image" id="image-viewer" style="max-width: 80%; height: auto; margin-top: 10px;"/>
+
+</div>
+
+```{=html}
+<script>
+// JavaScript to update the displayed image based on dropdown selection
+function updateImage() {
+  var imageSelector = document.getElementById("image-selector");
+  var selectedImage = imageSelector.value;
+  var imageViewer = document.getElementById("image-viewer");
+  imageViewer.src = selectedImage;
+}
+</script>
+```

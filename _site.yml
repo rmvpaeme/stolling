@@ -1,0 +1,32 @@
+title: "Veel gestelde vragen over hemostase"
+author: "Ruben Van Paemel"
+date: "2024-12-11"
+output_dir: "docs"  
+output: 
+  #rmdformats::readthedown:
+  #  fig_width: 5
+  #  
+  #  lightbox: true
+   # use_bookdown: true
+    #theme: cosmo
+  html_document:
+    self_contained: yes
+    toc: true
+    theme: flatly
+    toc_float: true
+    use_bookdown: true
+  #    collapsed: true
+  #    smooth_scroll: false
+editor_options: 
+  markdown: 
+    wrap: 72
+
+navbar:  
+  title: "Veel gestelde vragen over hemostase"
+  left: # alignment of the links on the navbar
+    - text: "Primaire hemostase" # text to appear on the Navbar at the top of the page
+      href: primairehemostase.html # link to the new page
+    - text: "Secundaire hemostase" # text to appear on the Navbar at the top of the page
+      href: secundairehemostase.html # link to the new page
+    - text: "Anticoagulantia" # text to appear on the Navbar at the top of the page
+      href: antico.html # link to the new page
