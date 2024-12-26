@@ -13,11 +13,13 @@ library(rmdformats)
 ```
 
 
-## Ik heb een patient met een trombose, welke stolfactoren moet ik bepalen?
+## Ik heb een patient met een trombose, welke stolfactoren moet ik bepalen voor trombofiliescreening?
 
 Wacht eerst tot na de acute fase, bij infectie/inflammatie kunnen
 stolfactoren vals verhoogd of verlaagd zijn door verbruik of door de
-acute fase.
+acute fase. 
+
+Indien de trombose CVC gerelateerd is kan er bij een eerste trombose afgewacht worden voor trombofiliescreening te starten. @neshat-vahid_etal16
 
 Bepaal daarna:
 
@@ -28,9 +30,7 @@ Bepaal daarna:
 -   APC (activated proteine C) resistentie
 -   F. V Leiden mutatie indien APC resistentie aanwezig
 -   Protrombine G20210A mutatie
--   Lupus anticoagulans
--   Anticardiolipine
--   beta-2-glycoproteine
+-   Antifosfolipide-antilichamen: lupus anticoagulans, anticardiolipine, beta-2-glycoproteine
 
 Over de rol van homocysteine is er discussie en routine testing is niet
 aangewezen. @Homocysteine
