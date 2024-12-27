@@ -42,7 +42,7 @@ Leiden</option> </select>
 
 <!-- Default image initially shown -->
 
-<img src="./images/stolling.drawio.svg" alt="Default Image" id="image-viewer" style="max-width: 80%; height: auto; margin-top: 10px;"/>
+<img src="./images/stolling.drawio.svg" alt="Default Image" id="image-viewer" style="max-width: 70%; height: auto; margin-top: 10px;"/>
 
 </div>
 

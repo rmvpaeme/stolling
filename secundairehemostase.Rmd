@@ -39,6 +39,8 @@ XII speelt geen rol bij de in vivo stolling) of bij aanwezigheid van een
 lupus anticoagulans (dit interfereert met de aPTT test waardoor die vals
 verlengd is).
 
+![](./images/aPTT.drawio.svg)
+
 ### Verlengde PT
 
 Bepaal F. II, V, VII, VIII, X en lupus anticoagulans. @rountreePartialThromboplastinTime2024
@@ -57,6 +59,8 @@ dat de aPTT normaal is en de PT gestoord is.
     eiwit) en kan compenseren voor de andere gedaalde stolfactoren
 -   Bij vitamine K deficientie: de halfwaardetijd van F. VII is het
     kortst en kan dus de eerste afwijkende factor zijn.
+
+![](./images/PT.drawio.svg)
 
 ### Verlengde PT en aPTT
 
@@ -93,6 +97,8 @@ Bij vitamine K deficientie zijn zowel PT als aPTT verstoord (zie
 figuur). Bij milde deficientie kan enkel PT verstoord zijn door een
 dominant effect van factor VII (dit heeft de kortste halfwaardetijd),
 bij ernstige deficientie zijn PT en aPTT beide verstoord (zie figuur).
+
+![](./images/vitK.drawio.svg)
 
 
 ## Referenties
