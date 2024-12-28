@@ -1,10 +1,10 @@
 ---
-title: "Bloedingsanamnese"
-output: html_document
+title: "Hoe doe ik een systematische bloedingsanamnese bij kinderen? "
+output:
+  html_document:
+    toc: false
 ---
 
-
-## Hoe doe ik een systematische bloedingsanamnese bij kinderen? 
 
 ```{r out.height = "800px", out.width='800px', echo=F}
 knitr::include_graphics("./pdf/bloedingsanamnese.pdf")

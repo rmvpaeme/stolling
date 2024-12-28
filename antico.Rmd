@@ -15,13 +15,13 @@ library(rmdformats)
 
 ## Ik heb een patient met een trombose, welke stolfactoren moet ik bepalen voor trombofiliescreening?
 
-Wacht eerst tot na de acute fase, bij infectie/inflammatie kunnen
+1. Wacht eerst tot na de acute fase, bij infectie/inflammatie kunnen
 stolfactoren vals verhoogd of verlaagd zijn door verbruik of door de
 acute fase. 
 
-Indien de trombose CVC gerelateerd is kan er bij een eerste trombose afgewacht worden voor trombofiliescreening te starten. @neshat-vahid_etal16
+2. Indien de trombose CVC gerelateerd is kan er bij een eerste trombose afgewacht worden voor trombofiliescreening te starten. @neshat-vahid_etal16
 
-Bepaal daarna:
+3. Voor verdere testing naar trombofilie, test:
 
 -   Proteine C (deficientie)
 -   Proteine S (deficientie)

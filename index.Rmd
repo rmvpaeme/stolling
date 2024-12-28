@@ -2,7 +2,7 @@
 title: "Stollingscascade"
 output:
   html_document:
-    toc: true
+    toc: false
 ---
 
 ```{r setup, include=FALSE}
@@ -31,7 +31,7 @@ heparine</option> <option value="./images/doac.drawio.svg">Xarelto/rivaroxaban, 
 <option value="./images/dabigatran.drawio.svg">Dabigatran/Pradaxa</option>
 <option value="./images/fibrinolysis.drawio.svg">Fibrinolyse</option>
 <option value="./images/tranexamic.drawio.svg">Tranexaminezuur (Exacyl)
-</option> <option value="./images/APC.drawio.svg">APC/F V
+</option> <option value="./images/APC.drawio.svg">APC resistentie/F V
 Leiden</option> </select>
 
 </div>
