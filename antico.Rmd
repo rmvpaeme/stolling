@@ -29,7 +29,7 @@ acute fase.
 -   F. VIII (overactiviteit)
 -   APC (activated proteine C) resistentie
 -   F. V Leiden mutatie indien APC resistentie aanwezig
--   Protrombine G20210A mutatie
+-   Protrombine G20210A mutatie. Deze mutatie zorgt voor een verhoogde protrombine concentratie en verhoogt het risico op een VTE 3 tot 4x indien men heterozygoot is voor de mutatie @Increased. Er is geen behandeling nodig als dit asymptomatisch is, maar bij situaties met een verhoogd risico op trombose (chirurgie, centrale katheters) is het belangrijk profylactische antico op te starten. 
 -   Antifosfolipide-antilichamen: lupus anticoagulans, anticardiolipine, beta-2-glycoproteine
 
 Over de rol van homocysteine is er discussie en routine testing is niet
