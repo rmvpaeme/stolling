@@ -1,0 +1,11 @@
+---
+title: "Bloedingsanamnese"
+output: html_document
+---
+
+
+## Hoe doe ik een systematische bloedingsanamnese bij kinderen? 
+
+```{r out.height = "800px", out.width='800px', echo=F}
+knitr::include_graphics("./pdf/bloedingsanamnese.pdf")
+```

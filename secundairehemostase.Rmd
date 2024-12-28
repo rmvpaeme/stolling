@@ -12,10 +12,12 @@ csl: vancouver.csl
 
 ## Welke stolfactoren moet ik bepalen bij een verlengde PT en/of aPTT? {.tabset}
 
-Denk eerst en vooral aan afnameproblemen (onvoldoende gevulde
-citraatbuis, heparine op dezelfde lijn, klonters in de citraatbuis).
+1. Is er een afnameprobleem? Denk een onvoldoende gevulde
+citraatbuis, heparine op dezelfde lijn, klonters in de citraatbuis,....
 
-Doe daarna een bloedingsanamnese LINK TOE TE VOEGEN.
+2. Is er een verhoogde bloedingsneiging? Doe daarvoor een gestructureerde [bloedingsanamnese.](./bloedingsanamnese.html) 
+
+3. Werk de stolling verder uit.
 
 ### Verlengde aPTT 
 
@@ -26,14 +28,10 @@ Bepaal F. VIII, IX, XI, XII, von Willebrand en lupus anticoagulans. @rountreePar
 Een verlengde aPTT kan gepaard gaan met wel of geen verhoogde
 bloedingsneiging.
 
-Bij een verhoogde bloedingsneiging kan er een probleem zijn met factoren
-VIII (hemofilie A), IX (hemofilie B), XI en XII.
+- Bij een verhoogde bloedingsneiging kan er een probleem zijn met factoren
+VIII (hemofilie A), IX (hemofilie B), XI, XII en von Willebrandfactor (VWF). Von Willebrandfactor zorgt voor (1) plaatjes binden aan endotheel en (2) F. VIII beschermen. Bij bepaalde vormen van von Willebrand met een verlaagd factor VIII kan het dus dat de aPTT verlengd is.
 
-Von Willebrandfactor zorgt voor (1) plaatjes binden aan endotheel en (2)
-F. VIII beschermen. Bij bepaalde vormen van von Willebrand met een
-verlaagd factor VIII kan het dus dat de aPTT verlengd is.
-
-De aPTT kan ook verstoord zijn zonder verhoogde bloedingsneiging bij een
+- De aPTT kan ook verstoord zijn zonder verhoogde bloedingsneiging bij een
 gedaalde factor XII (dit is een onderdeel van de aPTT test maar factor
 XII speelt geen rol bij de in vivo stolling) of bij aanwezigheid van een
 lupus anticoagulans (dit interfereert met de aPTT test waardoor die vals

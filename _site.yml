@@ -26,12 +26,15 @@ navbar:
   title: "Veel gestelde vragen over hemostase"
 
   left: # alignment of the links on the navbar
+    - text: "Bloedingsanamnese" # text to appear on the Navbar at the top of the page
+      href: bloedingsanamnese.html # link to the new page
+      icon: fa-solid fa-droplet
     - text: "Primaire hemostase" # text to appear on the Navbar at the top of the page
       href: primairehemostase.html # link to the new page
       icon: fa-sharp fa-regular fa-circle
     - text: "Secundaire hemostase" # text to appear on the Navbar at the top of the page
       href: secundairehemostase.html # link to the new page
-      icon: fa-solid fa-droplet
+      icon: fa-solid fa-vial
     - text: "Anticoagulantia" # text to appear on the Navbar at the top of the page
       href: antico.html # link to the new page
       icon: fa-solid fa-syringe
