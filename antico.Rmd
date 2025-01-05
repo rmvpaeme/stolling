@@ -40,7 +40,8 @@ aangewezen. @Homocysteine
 
 ## Wat zijn de indicaties voor DOACs bij kinderen?
 
-### Dabigatran/Pradaxa
+### Rivaroxaban/Xarelto
+
 Indicatie: behandeling en preventie van recidief van veneuze
 trombo-embolie (VTE). Bron: BCFI.
 
@@ -54,7 +55,8 @@ Terugbetaling indien:
 Attest: RIZIV
 https://webappsa.riziv-inami.fgov.be/ssp/RequestForms/Home/GetFile?requestFormId=221939
 
-### Rivaroxaban/Xarelto
+
+### Dabigatran/Pradaxa
 
 Indicatie: behandeling en preventie van recidief van veneuze
 trombo-embolie (VTE). Bron: BCFI.
