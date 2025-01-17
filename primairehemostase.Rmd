@@ -31,6 +31,25 @@ is verder onderzoek nodig.
 
 ## Hoe interpreteer ik von Willebrand testen?
 
+Von Willebrandfactor (vWF) heeft drie verschillende rollen in hemostase: (https://www.uptodate.com/contents/pathophysiology-of-von-willebrand-disease?topicRef=1307&source=see_link#H2303953676)
+
+1. vWF faciliteert de koppeling tussen plaatjes en vasculair subendotheel bij vasculaire schade
+1. Bij hoge shear stress verandert vWF naar een lineaire vorm waardoor plaatjes kunnen binden (via GPIb) en plaatjesaggregatie wordt gestart en onderhouden.
+1. Bescherming van circulerend factor VIII tegen degradatie door geactiveerd proteine C.  
+
+Bij een verdachte anamnese voor de ziekte van von Willebrand is het aangewezen om het volgende te bepalen:
+
+- Factor VIII.
+- von Willebrand antigen (vWF:Ag) - de kwantiteit van vWF in het plasma.
+- von Willebrand activiteit (vWF:RCo) - hierbij wordt er gemeten in welke mate vWF kan binden aan plaatjesmerker GPIb.
+
+Er zijn drie verschillende types van de ziekte van von Willebrand:
+
+- Type 1: hierbij is er een **gereduceerde hoeveelheid** vWF. In dit geval is er ongeveer een gelijkaardige daling van vWF:Ag en vWF:RCo. De ratio tussen vWF:RCo en vWF:Ag is > 0.7. Meestal autosomaal dominant.
+- Type 2: hierbij is er een **functioneel probleem**. De ratio tussen vWF:RCo en vWF:Ag is < 0.7. Verdere testing is aangewezen om het subtype (2A, 2B, 2M) te diagnosticeren. 
+  - Type 2N is een bijzonder subtype waarbij de binding tussen vWF:Ag/Rco en factor VIII gestoord is. Hierbij is vWF > 50% en is factor VIII gedaald (meestal < 30%). Verdere uitwerking is hier nodig het onderscheid met milde hemofilie A te kunnen maken.
+- Type 3: hierbij is de **vWF zeer laag tot afwezig**. Factor VIII wordt hierdoor ook gedegradeerd in de circulatie, waardoor de aPTT verlengdt kan zijn, en kunnen er ook spier- en gewrichtsbloedingen optreden. Meestal autosomaal recessief. 
+
 
 ## Referenties
 

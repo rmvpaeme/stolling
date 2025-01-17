@@ -4,6 +4,7 @@ output: html_document
 bibliography: Library.bib
 csl: vancouver.csl
 ---
+^[<font size="2">Deze pagina's zijn work in progress, nog niet gereviewed en mogen dus niet gebruikt worden voor klinische beslissingen.  </font> ]
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, dev = 'svglite', fig.ext = 'svg')
@@ -18,11 +19,8 @@ library(rmdformats)
 1. Wacht eerst tot na de acute fase, bij infectie/inflammatie kunnen
 stolfactoren vals verhoogd of verlaagd zijn door verbruik of door de
 acute fase. 
-
 2. Indien de trombose CVC gerelateerd is kan er bij een eerste trombose afgewacht worden voor trombofiliescreening te starten. @neshat-vahid_etal16
-
 3. Voor verdere testing naar trombofilie, test:
-
 -   Proteine C (deficientie)
 -   Proteine S (deficientie)
 -   Antitrombine (deficientie)
@@ -55,7 +53,6 @@ Terugbetaling indien:
 Attest: RIZIV
 https://webappsa.riziv-inami.fgov.be/ssp/RequestForms/Home/GetFile?requestFormId=221939
 
-
 ### Dabigatran/Pradaxa
 
 Indicatie: behandeling en preventie van recidief van veneuze
@@ -69,6 +66,8 @@ Terugbetaling indien:
 - Maximaal 12 maanden 
 
 Attest: RIZIV https://webappsa.riziv-inami.fgov.be/ssp/RequestForms/Home/GetFile?requestFormId=216390
+
+
 
 ---
 

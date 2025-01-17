@@ -4,7 +4,7 @@ output:
   html_document:
     toc: false
 ---
-
+^[<font size="2">Deze pagina's zijn work in progress, nog niet gereviewed en mogen dus niet gebruikt worden voor klinische beslissingen.  </font> ]
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, dev = 'svglite', fig.ext = 'svg')
 library(tidyverse)
@@ -57,3 +57,5 @@ function updateImage() {
 }
 </script>
 ```
+
+
